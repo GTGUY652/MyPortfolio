@@ -32,9 +32,9 @@ const hero: HeroContent = {
   name: 'Your Name',
   monogram: 'RT',
   headline: {
-    lineOne: 'I build fast,',
-    lineTwo: 'accessible products',
-    accent: 'for the web.',
+    lineOne: 'I work with Diligence,',
+    lineTwo: 'Willingness,',
+    accent: 'and Commitment',
   },
   summary:
     'I am a full-stack developer who turns ideas into reliable, responsive web products. I work with teams and clients from the first sketch to deployment, with a focus on performance, accessibility, and clean interfaces.',
