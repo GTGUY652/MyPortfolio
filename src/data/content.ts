@@ -1,4 +1,4 @@
-import avatarUrl from '../assets/images/avatar-placeholder.svg'
+import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dockerUrl from '../assets/logos/tech/docker.svg'
 import javascriptUrl from '../assets/logos/tech/javascript.svg'
 import nodedotjsUrl from '../assets/logos/tech/nodedotjs.svg'
@@ -29,7 +29,7 @@ const hero: HeroContent = {
   email: 'hello@example.com',
   cvUrl: '/cv-placeholder.pdf',
   avatar: avatarUrl,
-  avatarAlt: 'Portrait of Your Name',
+  avatarAlt: 'Portrait of the portfolio owner',
   labels: {
     getInTouch: 'Get in Touch',
     downloadCv: 'Download CV',
