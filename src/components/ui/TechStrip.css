@@ -14,11 +14,11 @@
 }
 
 .tech-strip__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 44px);
   justify-content: center;
-  gap: var(--space-5) var(--space-7);
+  align-items: center;
+  gap: var(--space-2);
 }
 
 .tech-strip__item {
@@ -42,9 +42,29 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 343px) {
   .tech-strip__list {
-    gap: var(--space-4) var(--space-5);
+    grid-template-columns: repeat(5, 44px);
+  }
+}
+
+@media (min-width: 640px) {
+  .tech-strip__list {
+    grid-template-columns: repeat(9, 44px);
+    gap: var(--space-4);
+  }
+}
+
+@media (min-width: 768px) {
+  .tech-strip__list {
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 1140px) {
+  .tech-strip__list {
+    grid-template-columns: repeat(18, 44px);
+    gap: var(--space-4);
   }
 }
 
