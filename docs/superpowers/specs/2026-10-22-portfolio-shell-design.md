@@ -26,7 +26,7 @@ This milestone builds the full page shell so the owner can evaluate layout, moti
 - Placeholder images use the same aspect ratios as the eventual real images, so swapping them causes no layout shift.
 - Keyboard navigation, focus visibility, landmarks, alt text, and reduced-motion support are in place.
 - `npm run build` and `npm run lint` pass with no errors.
-- No runtime dependencies beyond two locally bundled font packages.
+- Brick 1 adds no runtime dependencies beyond two locally bundled font packages. Later bricks may adopt pre-approved libraries under the dependency policy in section 12.
 
 ## 3. Scope
 
@@ -282,7 +282,7 @@ Plain CSS files co-located with components, using component-prefixed class names
 - `TechStrip({ items })` — labelled list of tech logos.
 - `Container({ children })` — layout wrapper.
 
-All UI icons live in `src/components/icons/index.tsx` as inline SVG components using `currentColor`: `ArrowUpRight`, `ArrowDown`, `Mail`, `Download`, `Menu`, `Close`, `GitHub`, `LinkedIn`, `X`, `Instagram`. No icon library.
+All UI icons live in `src/components/icons/index.tsx` as inline SVG components using `currentColor`: `ArrowUpRight`, `ArrowDown`, `Mail`, `Download`, `Menu`, `Close`, `GitHub`, `LinkedIn`, `X`, `Instagram`. Brick 1 needs no icon library for this set; `lucide-react` is pre-approved for later bricks if the set grows.
 
 ## 8. Section behaviour
 
@@ -398,11 +398,27 @@ All image imports happen in `content.ts`. Replacing an asset means overwriting t
 
 Performance:
 
-- No runtime libraries beyond React and the two font packages.
+- Brick 1 ships only React, React DOM, and the two font packages.
 - Fonts bundled locally, `font-display: swap`, variable weights only.
 - Vite hashes all imported assets.
 - No layout shift: image dimensions and font metrics accounted for.
 - Target: initial JS remains within roughly 10% of the current starter bundle (about 70 kB gzip) and Lighthouse performance stays in the green for a static page.
+
+### Dependency policy
+
+Brick 1 ships with React, React DOM, and the two font packages only. Additional libraries are opt-in, and only when a brick's plan states the need.
+
+| Library | Adopt when | Not for |
+|---|---|---|
+| `lucide-react` | The UI icon set outgrows the inline icons (roughly ten or more) | Brand marks |
+| `motion` | Scroll or entrance choreography CSS cannot express cleanly | Simple hover transitions |
+| `react-router` | Case-study or multi-page routes are introduced | Anchor navigation on one page |
+| `simple-icons` or `react-icons/si` | Maintaining local brand SVGs becomes a burden | General UI icons |
+| `@radix-ui/react-*` | A dialog, menu, or tooltip needs complete accessible behaviour | Layout and styling |
+
+Not pre-approved: CSS frameworks (Tailwind, Bootstrap), full component kits (shadcn/ui, MUI), state managers, and CMS clients. These require a new spec decision.
+
+Every addition must be tree-shakeable or small, measured during that brick's verification, and removable without rewriting section components.
 
 ## 13. Verification
 
@@ -461,7 +477,7 @@ Verification for every change:
 
 The shell is delivered in four independently reviewable bricks:
 
-1. **Foundation, navigation, and hero** — design tokens, global styles, content contract, placeholder assets, navbar, hero. This is the first implementation plan.
+1. **Foundation, navigation, and hero** — design tokens, global styles, content contract, placeholder assets, navbar, hero. This is the first implementation plan. It stays dependency-free apart from the two font packages; later bricks may adopt the opt-ins from section 12.
 2. **Projects** — project data, thumbnails, card grid, reveal motion.
 3. **Experience** — experience data, company marks, timeline rows.
 4. **Contact and footer** — contact copy, social links, footer, metadata polish.

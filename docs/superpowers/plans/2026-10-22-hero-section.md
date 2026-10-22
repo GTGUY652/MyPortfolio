@@ -15,7 +15,9 @@
 ## Global Constraints
 
 - Dark theme only. Use the exact colour, type, spacing, radius, and motion tokens from spec section 6.
-- Runtime dependencies are limited to React and the two `@fontsource-variable` packages. Do not add Tailwind, CSS Modules, styled-components, an icon library, an animation library, or a router.
+- Brick 1 runtime dependencies are React, React DOM, and the two `@fontsource-variable` packages. Do not add `lucide-react`, `motion`, `react-router`, a brand-icon package, a CSS framework, or a component kit in this brick. Later bricks may adopt the pre-approved opt-ins in spec section 12 when that brick's plan states the need.
+- Do not add a CSS framework, full component kit, state manager, or CMS client without a new spec decision.
+- Pre-approved for later bricks only: `lucide-react` (growing UI icon sets), `motion` (choreography CSS cannot express), `react-router` (case-study routes), `simple-icons`/`react-icons/si` (brand marks), `@radix-ui/react-*` (accessible primitives).
 - No automated test framework in this brick. Verification is `npm run build`, `npm run lint`, and the manual checks in Task 5.
 - All copy, hrefs, and image references live in `src/data/content.ts`. Components must not hard-code user-facing text or asset paths.
 - Placeholder content stays fictional. Never use real employer names or real personal claims.
