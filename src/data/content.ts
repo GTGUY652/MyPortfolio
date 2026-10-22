@@ -1,6 +1,6 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
-import projectAtlasUrl from '../assets/images/project-atlas-placeholder.svg'
 import projectNovaUrl from '../assets/images/project-nova-placeholder.svg'
+import taboImageUrl from '../assets/images/TaboImage-card.png'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
@@ -36,7 +36,7 @@ import type {
   TechItem,
 } from './types'
 
-// PLACEHOLDER CONTENT — replace every value in this file with real details.
+// Placeholder content remains in this file — replace placeholder values with real details.
 // Brick 1 exports the content object with navigation, hero, and tech data.
 // Later bricks fill in experience and socials.
 
@@ -96,7 +96,7 @@ const tech: TechItem[] = [
   { name: 'Postman', src: postmanUrl },
 ]
 
-// PLACEHOLDER CONTENT — replace these projects with real work.
+// Nova remains placeholder work. Replace its details and the example.com links when available.
 const projectsHeading: ProjectsHeading = {
   index: '01',
   label: 'Selected work',
@@ -107,14 +107,14 @@ const projectsHeading: ProjectsHeading = {
 
 const projects: ProjectItem[] = [
   {
-    title: 'Atlas',
-    category: 'Analytics dashboard',
+    title: 'Tabo',
+    category: 'Agricultural Platform',
     year: '2025',
     description:
-      'A concept analytics workspace that turns multi-source product data into clear, actionable views.',
-    tags: ['React', 'TypeScript', 'PostgreSQL'],
-    image: projectAtlasUrl,
-    imageAlt: 'Preview of the Atlas analytics dashboard',
+      'An agriculture social media platform that lets users Grow Together, Trade Together, and Work Together.',
+    tags: [],
+    image: taboImageUrl,
+    imageAlt: 'Sign-in screen for the Tabo agricultural platform',
     href: 'https://example.com',
   },
   {

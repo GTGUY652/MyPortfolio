@@ -50,16 +50,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <p className="project-card__summary">{project.description}</p>
 
-        <ul
-          className="project-card__tags"
-          aria-label={`Technologies used in ${project.title}`}
-        >
-          {project.tags.map((tag) => (
-            <li key={tag} className="project-card__tag">
-              {tag}
-            </li>
-          ))}
-        </ul>
+        {project.tags.length > 0 ? (
+          <ul
+            className="project-card__tags"
+            aria-label={`Technologies used in ${project.title}`}
+          >
+            {project.tags.map((tag) => (
+              <li key={tag} className="project-card__tag">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        ) : null}
 
         <span id={externalId} className="visually-hidden">
           project — opens in a new tab
