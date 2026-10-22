@@ -4,7 +4,7 @@
 
 **Goal:** Replace the Vite starter page with the first portfolio brick: design foundation, placeholder content and assets, a responsive sticky navbar, and the complete hero section.
 
-**Architecture:** A single React page composed from focused section, layout, and UI components. All copy and asset references live in one typed `content.ts` file. Styling uses plain co-located CSS files over shared design tokens; no CSS framework or component library. Images are local SVGs imported through Vite, with inline SVG UI icons.
+**Architecture:** A single React page composed from focused section, layout, and UI components. All in-page copy and asset references live in one typed `content.ts` file; static document metadata lives in `index.html`. Styling uses plain co-located CSS files over shared design tokens; no CSS framework or component library. Images are local SVGs imported through Vite, with inline SVG UI icons.
 
 **Tech Stack:** React 19.3, TypeScript 6.0, Vite 8.3, plain CSS, `@fontsource-variable/inter` and `@fontsource-variable/space-grotesk`.
 
@@ -19,7 +19,7 @@
 - Do not add a CSS framework, full component kit, state manager, or CMS client without a new spec decision.
 - Pre-approved for later bricks only: `lucide-react` (growing UI icon sets), `motion` (choreography CSS cannot express), `react-router` (case-study routes), `simple-icons`/`react-icons/si` (brand marks), `@radix-ui/react-*` (accessible primitives).
 - No automated test framework in this brick. Verification is `npm run build`, `npm run lint`, and the manual checks in Task 5.
-- All copy, hrefs, and image references live in `src/data/content.ts`. Components must not hard-code user-facing text or asset paths.
+- All in-page copy, hrefs, UI labels, and image references live in `src/data/content.ts` as one `SiteContent` object. Components must not hard-code in-page text or asset paths. Static document metadata lives in `index.html`.
 - Placeholder content stays fictional. Never use real employer names or real personal claims.
 - Only the Home nav link exists in this brick. Later bricks append their links as sections land.
 - Plain CSS files co-located with components. Global CSS is limited to `src/styles/tokens.css` and `src/styles/base.css`.
@@ -34,9 +34,17 @@ These are the failure modes a reasonable visitor would hit that the happy-path b
 
 1. **360px viewport with the full headline and summary** — text must wrap instead of forcing horizontal scroll, and both CTAs must remain tappable.
 2. **Keyboard-only mobile navigation** — the toggle must be reachable, announce its state, close on Escape, and show a visible focus ring.
-3. **`prefers-reduced-motion: reduce`** — smooth scrolling, hover translation, and the avatar glow animation must not move.
+3. **`prefers-reduced-motion: reduce`** — smooth scrolling and hover translation are disabled; the static avatar glow has no animation to suppress.
 4. **200% browser zoom** — the hero must not clip the headline, avatar, buttons, or tech strip.
 5. **Missing or renamed asset** — Vite must fail the build with a clear unresolved-import error rather than shipping a broken image.
+
+### Post-review corrections
+
+The final review corrected three handoff details. The shipped code differs from the snippets below in these ways:
+
+- `src/data/content.ts` exports one `content: SiteContent` object. UI labels live in `hero.labels`, and `App.tsx` consumes `content` rather than separate slices.
+- Static `<title>`, description, and Open Graph tags stay in `index.html`; the README documents this exception to the content-file workflow.
+- The navbar logo and desktop links use `min-width: 44px`/`min-height: 44px` to meet the touch-target requirement.
 
 ---
 

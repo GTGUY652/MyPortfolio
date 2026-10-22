@@ -19,8 +19,18 @@ npm run preview
 
 ## Editing content
 
-All copy, links, and asset references live in `src/data/content.ts`.
-Replace the placeholder values with your real details.
+In-page copy, navigation, links, UI labels, and asset references live in
+`src/data/content.ts` as the `content` object. Replace the placeholder
+values with your real details.
+
+### Page metadata
+
+Static document metadata lives in `index.html`: `<title>`, description,
+Open Graph tags, and theme colour. Update those separately; social preview
+crawlers read the HTML, not the React app.
+
+The `content` object already includes empty `projects`, `experience`, and
+`socials` arrays for later bricks.
 
 Images live in:
 

@@ -1,6 +1,6 @@
 import { Navbar } from './components/layout/Navbar'
 import { Hero } from './components/sections/Hero'
-import { hero, nav, tech } from './data/content'
+import { content } from './data/content'
 
 function App() {
   return (
@@ -9,10 +9,14 @@ function App() {
         Skip to content
       </a>
 
-      <Navbar name={hero.name} monogram={hero.monogram} nav={nav} />
+      <Navbar
+        name={content.name}
+        monogram={content.monogram}
+        nav={content.nav}
+      />
 
       <main id="main" tabIndex={-1}>
-        <Hero hero={hero} tech={tech} />
+        <Hero hero={content} tech={content.tech} />
       </main>
     </>
   )

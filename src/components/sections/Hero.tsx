@@ -32,15 +32,15 @@ export function Hero({ hero, tech }: HeroProps) {
         <p className="hero__summary">{hero.summary}</p>
 
         <div className="hero__actions">
-          <Button href={`mailto:${hero.email}`}>Get in Touch</Button>
+          <Button href={`mailto:${hero.email}`}>{hero.labels.getInTouch}</Button>
           <Button href={hero.cvUrl} variant="secondary" download>
             <Download width="18" height="18" />
-            Download CV
+            {hero.labels.downloadCv}
           </Button>
         </div>
 
         <div className="hero__tech">
-          <TechStrip items={tech} />
+          <TechStrip items={tech} label={hero.labels.experienceWith} />
         </div>
       </div>
     </section>

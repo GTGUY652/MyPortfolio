@@ -35,10 +35,15 @@ export interface ExperienceItem {
   logoAlt: string
 }
 
+export interface HeroLabels {
+  getInTouch: string
+  downloadCv: string
+  experienceWith: string
+}
+
 export interface HeroContent {
   name: string
   monogram: string
-  role: string
   headline: {
     lineOne: string
     lineTwo: string
@@ -49,6 +54,7 @@ export interface HeroContent {
   cvUrl: string
   avatar: string
   avatarAlt: string
+  labels: HeroLabels
 }
 
 export interface SiteContent extends HeroContent {

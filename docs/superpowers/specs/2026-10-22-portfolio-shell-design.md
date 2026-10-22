@@ -22,7 +22,7 @@ This milestone builds the full page shell so the owner can evaluate layout, moti
 - The page contains every section from the reference: navigation, hero, projects, experience, contact, footer.
 - The layout is responsive and usable from 360px to 1440px wide with no horizontal scrolling.
 - Visuals follow the reference's structure but use one consistent accent instead of the reference's per-section orange/purple/blue.
-- All copy, links, and image references live in one typed data file; replacing real content requires no component edits.
+- All in-page copy, links, UI labels, and image references live in one typed data file; replacing real content requires no component edits. Static document metadata (title, description, Open Graph tags) lives in `index.html` and is updated separately.
 - Placeholder images use the same aspect ratios as the eventual real images, so swapping them causes no layout shift.
 - Keyboard navigation, focus visibility, landmarks, alt text, and reduced-motion support are in place.
 - `npm run build` and `npm run lint` pass with no errors.
@@ -114,10 +114,15 @@ export interface ExperienceItem {
   logoAlt: string
 }
 
-export interface SiteContent {
+export interface HeroLabels {
+  getInTouch: string
+  downloadCv: string
+  experienceWith: string
+}
+
+export interface HeroContent {
   name: string
   monogram: string
-  role: string
   headline: {
     lineOne: string
     lineTwo: string
@@ -128,6 +133,10 @@ export interface SiteContent {
   cvUrl: string
   avatar: string
   avatarAlt: string
+  labels: HeroLabels
+}
+
+export interface SiteContent extends HeroContent {
   nav: NavItem[]
   tech: TechItem[]
   projects: ProjectItem[]
@@ -140,8 +149,9 @@ export interface SiteContent {
 
 Every value is fictional and visibly marked with a `PLACEHOLDER` comment in `content.ts`. No real employer claims are used.
 
-- Name: `Your Name`; monogram: `YN`; role: `Full-Stack Developer`.
+- Name: `Your Name`; monogram: `YN`.
 - Headline: `I build fast,` / `accessible products` / accent `for the web.`
+- UI labels: `Get in Touch`, `Download CV`, `Experience with`.
 - Summary: a two-sentence paragraph describing building responsive, accessible web products with teams and clients.
 - Email: `hello@example.com`.
 - CV: `/cv-placeholder.pdf`.
@@ -447,7 +457,7 @@ Verification for every change:
 - [ ] Focus ring visible on every interactive element.
 - [ ] Reduced motion removes entrance animation and smooth scrolling.
 - [ ] `npm run build` and `npm run lint` pass.
-- [ ] Replacing copy and images requires edits only in `content.ts` and `assets/`.
+- [ ] Replacing in-page copy and images requires edits only in `content.ts` and `assets/`; static document metadata is updated in `index.html`.
 - [ ] README explains setup and content replacement.
 
 ## 15. Risks and mitigations

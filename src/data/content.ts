@@ -5,21 +5,20 @@ import nodedotjsUrl from '../assets/logos/tech/nodedotjs.svg'
 import postgresqlUrl from '../assets/logos/tech/postgresql.svg'
 import reactUrl from '../assets/logos/tech/react.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
-import type { HeroContent, NavItem, TechItem } from './types'
+import type { HeroContent, NavItem, SiteContent, TechItem } from './types'
 
 // PLACEHOLDER CONTENT — replace every value in this file with real details.
-// Brick 1 exports the navigation, hero, and tech slices. Later bricks append
-// projects, experience, and social links to this same file.
+// Brick 1 exports the content object with navigation, hero, and tech data.
+// Later bricks fill in projects, experience, and socials.
 
-export const nav: NavItem[] = [
+const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
   // Projects, Experience, and Contact links are added when those sections land.
 ]
 
-export const hero: HeroContent = {
+const hero: HeroContent = {
   name: 'Your Name',
   monogram: 'YN',
-  role: 'Full-Stack Developer',
   headline: {
     lineOne: 'I build fast,',
     lineTwo: 'accessible products',
@@ -31,9 +30,14 @@ export const hero: HeroContent = {
   cvUrl: '/cv-placeholder.pdf',
   avatar: avatarUrl,
   avatarAlt: 'Portrait of Your Name',
+  labels: {
+    getInTouch: 'Get in Touch',
+    downloadCv: 'Download CV',
+    experienceWith: 'Experience with',
+  },
 }
 
-export const tech: TechItem[] = [
+const tech: TechItem[] = [
   { name: 'JavaScript', src: javascriptUrl },
   { name: 'TypeScript', src: typescriptUrl },
   { name: 'React', src: reactUrl },
@@ -41,3 +45,12 @@ export const tech: TechItem[] = [
   { name: 'PostgreSQL', src: postgresqlUrl },
   { name: 'Docker', src: dockerUrl },
 ]
+
+export const content: SiteContent = {
+  ...hero,
+  nav,
+  tech,
+  projects: [],
+  experience: [],
+  socials: [],
+}
