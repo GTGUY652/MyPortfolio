@@ -1,5 +1,5 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
-import projectNovaUrl from '../assets/images/project-nova-placeholder.svg'
+import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
@@ -96,7 +96,7 @@ const tech: TechItem[] = [
   { name: 'Postman', src: postmanUrl },
 ]
 
-// Nova remains placeholder work. Replace its details and the example.com links when available.
+// Project previews use screenshots of the live sites.
 const projectsHeading: ProjectsHeading = {
   index: '01',
   label: 'Selected work',
@@ -118,15 +118,16 @@ const projects: ProjectItem[] = [
     href: 'https://tabo.com.ph/',
   },
   {
-    title: 'Nova',
-    category: 'E-commerce storefront',
+    title: 'DinkResponsibly',
+    category: 'Booking System',
     year: '2024',
     description:
-      'A storefront concept pairing editorial product storytelling with a streamlined shopping path.',
-    tags: ['React', 'Tailwind CSS', 'Supabase'],
-    image: projectNovaUrl,
-    imageAlt: 'Preview of the Nova storefront',
-    href: 'https://example.com',
+      'A booking system with AI integration for the admin side that helps with operations and can help with business-side problems, questions, and suggestions.',
+    tags: [],
+    image: dinkResponsiblyUrl,
+    imageAlt:
+      'DinkResponsibly homepage with pickleball court booking and availability',
+    href: 'https://dink-responsibly.vercel.app/',
   },
 ]
 
