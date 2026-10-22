@@ -5,6 +5,7 @@ import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
 import dockerUrl from '../assets/logos/tech/docker.svg'
+import expressjsUrl from '../assets/logos/tech/expressjs.svg'
 import firebaseUrl from '../assets/logos/tech/firebase.svg'
 import hostingerUrl from '../assets/logos/tech/hostinger.svg'
 import html5Url from '../assets/logos/tech/html5.svg'
@@ -12,8 +13,11 @@ import javaUrl from '../assets/logos/tech/java.svg'
 import javascriptUrl from '../assets/logos/tech/javascript.svg'
 import kotlinUrl from '../assets/logos/tech/kotlin.svg'
 import mongodbUrl from '../assets/logos/tech/mongodb.svg'
+import nestjsUrl from '../assets/logos/tech/nestjs.svg'
+import nextjsUrl from '../assets/logos/tech/nextjs.svg'
 import phpUrl from '../assets/logos/tech/php.svg'
 import postgresqlUrl from '../assets/logos/tech/postgresql.svg'
+import postmanUrl from '../assets/logos/tech/postman.svg'
 import pythonUrl from '../assets/logos/tech/python.svg'
 import reactUrl from '../assets/logos/tech/react.svg'
 import reactnativeUrl from '../assets/logos/tech/reactnative.svg'
@@ -69,8 +73,11 @@ const tech: TechItem[] = [
   { name: 'CSS', src: cssUrl },
   { name: 'React', src: reactUrl },
   { name: 'React Native', src: reactnativeUrl },
+  { name: 'Next.js', src: nextjsUrl },
   { name: 'TypeScript', src: typescriptUrl },
   { name: 'Tailwind CSS', src: tailwindcssUrl },
+  { name: 'NestJS', src: nestjsUrl },
+  { name: 'ExpressJS', src: expressjsUrl },
   { name: 'Java', src: javaUrl },
   { name: 'Kotlin', src: kotlinUrl },
   { name: 'Python', src: pythonUrl },
@@ -86,6 +93,7 @@ const tech: TechItem[] = [
   { name: 'Firebase', src: firebaseUrl },
   { name: 'SQLite', src: sqliteUrl },
   { name: 'MongoDB', src: mongodbUrl },
+  { name: 'Postman', src: postmanUrl },
 ]
 
 // PLACEHOLDER CONTENT — replace these projects with real work.
