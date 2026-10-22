@@ -37,7 +37,7 @@ const hero: HeroContent = {
     accent: 'and Commitment',
   },
   summary:
-    'I am a full-stack developer who turns ideas into reliable, responsive web products. I work with teams and clients from the first sketch to deployment, with a focus on performance, accessibility, and clean interfaces.',
+    'I am a Software Developer aspiring to fix any IT solutions that comes to me. When I work, I do it with diligence, willingness, and commitment because having these traits makes me work hard, especially when there are new things that need to be learned. In a new environment, I tend to get close to the new stuff so that I can learn, adapt, and apply. What I show is not just my work but my willingness to solve, adapt, and learn at each step of the way.',
   email: 'hello@example.com',
   cvUrl: '/cv-placeholder.pdf',
   avatar: avatarUrl,
