@@ -37,6 +37,8 @@
     <circle cx="134" cy="78" r="7" fill="#34d399"/>
     <rect x="180" y="62" width="330" height="32" rx="16" fill="#0d0f16" stroke="#272a38"/>
     <text x="202" y="84" fill="#8f93a8" font-family="Arial, sans-serif" font-size="14">app.atlas.dev / overview</text>
+    <rect x="1360" y="62" width="160" height="32" rx="16" fill="#f472b6" fill-opacity="0.12" stroke="#f472b6" stroke-opacity="0.35"/>
+    <text x="1440" y="83" text-anchor="middle" fill="#f9a8d4" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">SAMPLE DATA</text>
     <rect x="48" y="116" width="260" height="844" fill="#0d0f16"/>
     <line x1="308" y1="116" x2="308" y2="960" stroke="#252735"/>
     <rect x="80" y="150" width="34" height="34" rx="10" fill="url(#atlasAccent)"/>
@@ -57,7 +59,7 @@
     <rect x="72" y="812" width="212" height="82" rx="14" fill="#171925" stroke="#2a2c3a"/>
     <circle cx="100" cy="844" r="15" fill="url(#atlasAccent)"/>
     <text x="126" y="842" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="13" font-weight="600">Workspace plan</text>
-    <text x="126" y="862" fill="#8f93a8" font-family="Arial, sans-serif" font-size="12">12 days remaining</text>
+    <text x="126" y="862" fill="#8f93a8" font-family="Arial, sans-serif" font-size="12">Preview only</text>
     <rect x="90" y="874" width="176" height="6" rx="3" fill="#2a2c3a"/>
     <rect x="90" y="874" width="118" height="6" rx="3" fill="#c084fc"/>
     <text x="340" y="174" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="34" font-weight="700">Overview</text>
@@ -129,11 +131,12 @@
       <text x="364" y="870" fill="#8f93a8">Project</text>
       <text x="820" y="870" fill="#8f93a8">Owner</text>
       <text x="1120" y="870" fill="#8f93a8">Status</text>
-      <text x="364" y="900" fill="#d9d9e3">Northstar rollout</text>
-      <text x="820" y="900" fill="#a8abba">Maya Chen</text>
+      <text x="364" y="900" fill="#d9d9e3">Project A</text>
+      <text x="820" y="900" fill="#a8abba">Team</text>
       <rect x="1120" y="884" width="86" height="24" rx="12" fill="#34d399" fill-opacity="0.12"/>
       <text x="1163" y="900" text-anchor="middle" fill="#6ee7b7">On track</text>
     </g>
+    <text x="800" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="14" fill="#f472b6" fill-opacity="0.13" transform="rotate(-16 800 520)">SAMPLE DATA</text>
   </g>
   <rect x="48" y="40" width="1504" height="920" rx="28" fill="none" stroke="#2c2e3d"/>
 </svg>
