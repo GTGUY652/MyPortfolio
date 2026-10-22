@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="atlasTitle atlasDesc">
+  <title id="atlasTitle">Atlas analytics dashboard preview</title>
+  <desc id="atlasDesc">A dark analytics dashboard with metric cards, a revenue chart, traffic sources, and a recent activity table.</desc>
+  <defs>
+    <linearGradient id="atlasBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090a10"/>
+      <stop offset="0.55" stop-color="#10101a"/>
+      <stop offset="1" stop-color="#171022"/>
+    </linearGradient>
+    <radialGradient id="atlasGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c084fc" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="atlasAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="atlasArea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c084fc" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="atlasGrid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <clipPath id="atlasFrame">
+      <rect x="48" y="40" width="1504" height="920" rx="28"/>
+    </clipPath>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#atlasBg)"/>
+  <circle cx="1390" cy="90" r="420" fill="url(#atlasGlow)"/>
+  <rect width="1600" height="1000" fill="url(#atlasGrid)"/>
+  <g clip-path="url(#atlasFrame)">
+    <rect x="48" y="40" width="1504" height="920" fill="#11131b"/>
+    <rect x="48" y="40" width="1504" height="76" fill="#171925"/>
+    <circle cx="86" cy="78" r="7" fill="#f472b6"/>
+    <circle cx="110" cy="78" r="7" fill="#fbbf24"/>
+    <circle cx="134" cy="78" r="7" fill="#34d399"/>
+    <rect x="180" y="62" width="330" height="32" rx="16" fill="#0d0f16" stroke="#272a38"/>
+    <text x="202" y="84" fill="#8f93a8" font-family="Arial, sans-serif" font-size="14">app.atlas.dev / overview</text>
+    <rect x="48" y="116" width="260" height="844" fill="#0d0f16"/>
+    <line x1="308" y1="116" x2="308" y2="960" stroke="#252735"/>
+    <rect x="80" y="150" width="34" height="34" rx="10" fill="url(#atlasAccent)"/>
+    <path d="M92 176l7-15 7 15" fill="none" stroke="#15101d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="126" y="174" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="2">ATLAS</text>
+    <rect x="72" y="220" width="212" height="46" rx="12" fill="#c084fc" fill-opacity="0.12"/>
+    <rect x="72" y="220" width="4" height="46" rx="2" fill="#c084fc"/>
+    <rect x="92" y="235" width="16" height="16" rx="4" fill="#c084fc" fill-opacity="0.8"/>
+    <text x="122" y="248" fill="#e9d5ff" font-family="Arial, sans-serif" font-size="15" font-weight="600">Overview</text>
+    <rect x="92" y="288" width="16" height="16" rx="4" fill="#4b4d5e"/>
+    <text x="122" y="301" fill="#a8abba" font-family="Arial, sans-serif" font-size="15">Reports</text>
+    <rect x="92" y="340" width="16" height="16" rx="4" fill="#4b4d5e"/>
+    <text x="122" y="353" fill="#a8abba" font-family="Arial, sans-serif" font-size="15">Customers</text>
+    <rect x="92" y="392" width="16" height="16" rx="4" fill="#4b4d5e"/>
+    <text x="122" y="405" fill="#a8abba" font-family="Arial, sans-serif" font-size="15">Integrations</text>
+    <rect x="92" y="444" width="16" height="16" rx="4" fill="#4b4d5e"/>
+    <text x="122" y="457" fill="#a8abba" font-family="Arial, sans-serif" font-size="15">Settings</text>
+    <rect x="72" y="812" width="212" height="82" rx="14" fill="#171925" stroke="#2a2c3a"/>
+    <circle cx="100" cy="844" r="15" fill="url(#atlasAccent)"/>
+    <text x="126" y="842" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="13" font-weight="600">Workspace plan</text>
+    <text x="126" y="862" fill="#8f93a8" font-family="Arial, sans-serif" font-size="12">12 days remaining</text>
+    <rect x="90" y="874" width="176" height="6" rx="3" fill="#2a2c3a"/>
+    <rect x="90" y="874" width="118" height="6" rx="3" fill="#c084fc"/>
+    <text x="340" y="174" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="34" font-weight="700">Overview</text>
+    <text x="340" y="204" fill="#8f93a8" font-family="Arial, sans-serif" font-size="15">Product performance at a glance</text>
+    <rect x="1280" y="146" width="232" height="42" rx="12" fill="#171925" stroke="#2a2c3a"/>
+    <text x="1300" y="172" fill="#c7c9d4" font-family="Arial, sans-serif" font-size="14">Last 30 days</text>
+    <path d="m1480 160 8 8 8-8" fill="none" stroke="#8f93a8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g>
+      <rect x="340" y="240" width="374" height="140" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+      <text x="364" y="278" fill="#8f93a8" font-family="Arial, sans-serif" font-size="14">Monthly recurring revenue</text>
+      <text x="364" y="326" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="34" font-weight="700">$128.4k</text>
+      <rect x="364" y="342" width="74" height="24" rx="12" fill="#34d399" fill-opacity="0.12"/>
+      <text x="378" y="359" fill="#6ee7b7" font-family="Arial, sans-serif" font-size="12">+12.8%</text>
+    </g>
+    <g>
+      <rect x="738" y="240" width="374" height="140" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+      <text x="762" y="278" fill="#8f93a8" font-family="Arial, sans-serif" font-size="14">Active accounts</text>
+      <text x="762" y="326" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="34" font-weight="700">8,492</text>
+      <rect x="762" y="342" width="64" height="24" rx="12" fill="#f472b6" fill-opacity="0.12"/>
+      <text x="776" y="359" fill="#f9a8d4" font-family="Arial, sans-serif" font-size="12">+8.2%</text>
+    </g>
+    <g>
+      <rect x="1136" y="240" width="374" height="140" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+      <text x="1160" y="278" fill="#8f93a8" font-family="Arial, sans-serif" font-size="14">Conversion rate</text>
+      <text x="1160" y="326" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="34" font-weight="700">4.8%</text>
+      <rect x="1160" y="342" width="64" height="24" rx="12" fill="#67e8f9" fill-opacity="0.12"/>
+      <text x="1174" y="359" fill="#a5f3fc" font-family="Arial, sans-serif" font-size="12">+1.4%</text>
+    </g>
+    <rect x="340" y="404" width="760" height="356" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+    <text x="364" y="444" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="20" font-weight="600">Revenue</text>
+    <text x="364" y="468" fill="#8f93a8" font-family="Arial, sans-serif" font-size="13">Last 30 days compared with previous period</text>
+    <rect x="948" y="424" width="124" height="30" rx="15" fill="#0d0f16" stroke="#2a2c3a"/>
+    <text x="1010" y="444" text-anchor="middle" fill="#c7c9d4" font-family="Arial, sans-serif" font-size="12">USD</text>
+    <g stroke="#ffffff" stroke-opacity="0.05">
+      <line x1="380" y1="512" x2="1060" y2="512"/>
+      <line x1="380" y1="562" x2="1060" y2="562"/>
+      <line x1="380" y1="612" x2="1060" y2="612"/>
+      <line x1="380" y1="662" x2="1060" y2="662"/>
+      <line x1="380" y1="712" x2="1060" y2="712"/>
+    </g>
+    <path d="M380 664C425 644 447 612 492 620S557 590 602 602 667 552 712 566 777 524 822 534 887 488 932 504 997 462 1042 474 1052 456 1060 452V712H380Z" fill="url(#atlasArea)"/>
+    <path d="M380 664C425 644 447 612 492 620S557 590 602 602 667 552 712 566 777 524 822 534 887 488 932 504 997 462 1042 474 1052 456 1060 452" fill="none" stroke="url(#atlasAccent)" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#171a24" stroke="#c084fc" stroke-width="3">
+      <circle cx="492" cy="620" r="7"/>
+      <circle cx="712" cy="566" r="7"/>
+      <circle cx="932" cy="504" r="7"/>
+      <circle cx="1060" cy="452" r="7"/>
+    </g>
+    <rect x="1124" y="404" width="386" height="356" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+    <text x="1148" y="444" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="20" font-weight="600">Traffic sources</text>
+    <circle cx="1317" cy="566" r="72" fill="none" stroke="#222531" stroke-width="28"/>
+    <circle cx="1317" cy="566" r="72" fill="none" stroke="#c084fc" stroke-width="28" stroke-dasharray="203 249" transform="rotate(-90 1317 566)"/>
+    <circle cx="1317" cy="566" r="72" fill="none" stroke="#f472b6" stroke-width="28" stroke-dasharray="136 316" stroke-dashoffset="-203" transform="rotate(-90 1317 566)"/>
+    <circle cx="1317" cy="566" r="72" fill="none" stroke="#67e8f9" stroke-width="28" stroke-dasharray="113 339" stroke-dashoffset="-339" transform="rotate(-90 1317 566)"/>
+    <text x="1317" y="562" text-anchor="middle" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="28" font-weight="700">45%</text>
+    <text x="1317" y="582" text-anchor="middle" fill="#8f93a8" font-family="Arial, sans-serif" font-size="12">Organic</text>
+    <g font-family="Arial, sans-serif" font-size="12" fill="#a8abba">
+      <rect x="1150" y="668" width="10" height="10" rx="3" fill="#c084fc"/>
+      <text x="1170" y="677">Organic search</text>
+      <rect x="1150" y="694" width="10" height="10" rx="3" fill="#f472b6"/>
+      <text x="1170" y="703">Direct</text>
+      <rect x="1150" y="720" width="10" height="10" rx="3" fill="#67e8f9"/>
+      <text x="1170" y="729">Referral</text>
+    </g>
+    <rect x="340" y="788" width="1170" height="132" rx="18" fill="#171a24" stroke="#2a2c3a"/>
+    <text x="364" y="824" fill="#f4f4f5" font-family="Arial, sans-serif" font-size="18" font-weight="600">Recent activity</text>
+    <line x1="364" y1="844" x2="1486" y2="844" stroke="#2a2c3a"/>
+    <g font-family="Arial, sans-serif" font-size="13">
+      <text x="364" y="870" fill="#8f93a8">Project</text>
+      <text x="820" y="870" fill="#8f93a8">Owner</text>
+      <text x="1120" y="870" fill="#8f93a8">Status</text>
+      <text x="364" y="900" fill="#d9d9e3">Northstar rollout</text>
+      <text x="820" y="900" fill="#a8abba">Maya Chen</text>
+      <rect x="1120" y="884" width="86" height="24" rx="12" fill="#34d399" fill-opacity="0.12"/>
+      <text x="1163" y="900" text-anchor="middle" fill="#6ee7b7">On track</text>
+    </g>
+  </g>
+  <rect x="48" y="40" width="1504" height="920" rx="28" fill="none" stroke="#2c2e3d"/>
+</svg>

@@ -18,6 +18,8 @@ export interface TechItem {
 
 export interface ProjectItem {
   title: string
+  category: string
+  year: string
   description: string
   tags: string[]
   image: string
@@ -57,10 +59,18 @@ export interface HeroContent {
   labels: HeroLabels
 }
 
+export interface ProjectsHeading {
+  index: string
+  label: string
+  title: string
+  intro: string
+}
+
 export interface SiteContent extends HeroContent {
   nav: NavItem[]
   tech: TechItem[]
   projects: ProjectItem[]
+  projectsHeading: ProjectsHeading
   experience: ExperienceItem[]
   socials: SocialLink[]
 }
