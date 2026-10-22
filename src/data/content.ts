@@ -33,7 +33,7 @@ const nav: NavItem[] = [
 ]
 
 const hero: HeroContent = {
-  name: 'Your Name',
+  name: 'Rikcy Tano',
   monogram: 'RT',
   headline: {
     lineOne: 'I work with Diligence,',

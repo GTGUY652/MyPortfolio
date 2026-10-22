@@ -1,4 +1,4 @@
-# Your Name — Portfolio
+# Rikcy Tano — Portfolio
 
 A single-page personal portfolio built with React, TypeScript, and Vite.
 
