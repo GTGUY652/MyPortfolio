@@ -115,7 +115,7 @@ const projects: ProjectItem[] = [
     tags: [],
     image: taboImageUrl,
     imageAlt: 'Sign-in screen for the Tabo agricultural platform',
-    href: 'https://example.com',
+    href: 'https://tabo.com.ph/',
   },
   {
     title: 'Nova',
