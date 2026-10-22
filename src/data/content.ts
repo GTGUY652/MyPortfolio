@@ -102,7 +102,7 @@ const projectsHeading: ProjectsHeading = {
   label: 'Selected work',
   title: 'Projects',
   intro:
-    'A selection of interfaces and systems I’ve built from concept through launch.',
+    'A selection of interfaces and systems that I’ve built and helped build from concept through launch.',
 }
 
 const projects: ProjectItem[] = [
