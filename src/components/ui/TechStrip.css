@@ -11,6 +11,11 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.tech-strip__label--active {
+  color: var(--color-accent-from);
 }
 
 .tech-strip__list {
