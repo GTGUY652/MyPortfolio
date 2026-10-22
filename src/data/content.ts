@@ -1,6 +1,9 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
+import acmeLogoUrl from '../assets/logos/companies/acme.svg'
+import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
+import northwindLogoUrl from '../assets/logos/companies/northwind.svg'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
@@ -28,6 +31,8 @@ import tailwindcssUrl from '../assets/logos/tech/tailwindcss.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
 import xamppUrl from '../assets/logos/tech/xampp.svg'
 import type {
+  ExperienceHeading,
+  ExperienceItem,
   HeroContent,
   NavItem,
   ProjectItem,
@@ -37,13 +42,12 @@ import type {
 } from './types'
 
 // Placeholder content remains in this file — replace placeholder values with real details.
-// Brick 1 exports the content object with navigation, hero, and tech data.
-// Later bricks fill in experience and socials.
 
 const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'Projects', href: '#projects' },
-  // Experience and Contact links are added when those sections land.
+  { label: 'Experience', href: '#experience' },
+  // Contact is added when that section lands.
 ]
 
 const hero: HeroContent = {
@@ -131,12 +135,52 @@ const projects: ProjectItem[] = [
   },
 ]
 
+const experienceHeading: ExperienceHeading = {
+  index: '02',
+  label: 'Career',
+  title: 'Experience',
+  intro:
+    'A look at the teams and products I’ve contributed to, and the problems I’ve helped solve.',
+}
+
+// PLACEHOLDER CONTENT — replace these entries with real experience.
+const experience: ExperienceItem[] = [
+  {
+    role: 'Senior Frontend Developer',
+    company: 'Northwind Studio',
+    start: '2023',
+    end: 'Present',
+    description:
+      'Led front-end delivery for a multi-tenant analytics product, partnering with design and backend teams to ship clearer, faster workflows.',
+    logo: northwindLogoUrl,
+  },
+  {
+    role: 'Full-Stack Developer',
+    company: 'Acme Labs',
+    start: '2021',
+    end: '2023',
+    description:
+      'Built and maintained full-stack features across customer-facing and internal tools, with a focus on reliable data flows and reusable UI patterns.',
+    logo: acmeLogoUrl,
+  },
+  {
+    role: 'Web Developer',
+    company: 'Freelance',
+    start: '2020',
+    end: '2021',
+    description:
+      'Designed and shipped responsive sites for small businesses, handling everything from discovery and UI to deployment and handoff.',
+    logo: freelanceLogoUrl,
+  },
+]
+
 export const content: SiteContent = {
   ...hero,
   nav,
   tech,
   projectsHeading,
   projects,
-  experience: [],
+  experienceHeading,
+  experience,
   socials: [],
 }

@@ -34,7 +34,13 @@ export interface ExperienceItem {
   end: string
   description: string
   logo: string
-  logoAlt: string
+}
+
+export interface ExperienceHeading {
+  index: string
+  label: string
+  title: string
+  intro: string
 }
 
 export interface HeroLabels {
@@ -72,5 +78,6 @@ export interface SiteContent extends HeroContent {
   projects: ProjectItem[]
   projectsHeading: ProjectsHeading
   experience: ExperienceItem[]
+  experienceHeading: ExperienceHeading
   socials: SocialLink[]
 }
