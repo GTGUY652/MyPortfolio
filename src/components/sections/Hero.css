@@ -1,0 +1,117 @@
+.hero {
+  display: grid;
+  align-items: center;
+  min-height: calc(100svh - var(--nav-height));
+  padding-block: clamp(64px, 10vh, 112px);
+  scroll-margin-top: var(--nav-height);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__avatar {
+  position: relative;
+  isolation: isolate;
+  width: 176px;
+  height: 176px;
+  padding: 4px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-accent);
+}
+
+.hero__avatar::before {
+  content: '';
+  position: absolute;
+  inset: -72px;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgba(192, 132, 252, 0.18),
+    transparent 68%
+  );
+  pointer-events: none;
+}
+
+.hero__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.hero__title {
+  margin-top: var(--space-7);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.hero__accent {
+  background: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__summary {
+  max-width: 62ch;
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.hero__tech {
+  margin-top: clamp(48px, 8vh, 80px);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-block: var(--space-8) var(--space-7);
+  }
+
+  .hero__avatar {
+    width: 136px;
+    height: 136px;
+  }
+
+  .hero__title {
+    margin-top: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .button {
+    width: 100%;
+  }
+}
+
+@media (forced-colors: active) {
+  .hero__accent {
+    background: none;
+    color: currentColor;
+    -webkit-text-fill-color: currentColor;
+  }
+}
