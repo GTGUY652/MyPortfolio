@@ -8,7 +8,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-5);
+  max-width: 880px;
   margin-top: var(--space-7);
+  margin-inline: auto;
 }
 
 .projects__grid > li {
