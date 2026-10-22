@@ -18,7 +18,7 @@ const nav: NavItem[] = [
 
 const hero: HeroContent = {
   name: 'Your Name',
-  monogram: 'YN',
+  monogram: 'RT',
   headline: {
     lineOne: 'I build fast,',
     lineTwo: 'accessible products',
