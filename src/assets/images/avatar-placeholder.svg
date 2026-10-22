@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="32%" cy="24%" r="88%">
+      <stop offset="0" stop-color="#e9d5ff" />
+      <stop offset="0.45" stop-color="#c084fc" />
+      <stop offset="1" stop-color="#be185d" />
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" />
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16">
+    <circle cx="200" cy="200" r="146" stroke-width="1" />
+    <circle cx="200" cy="200" r="118" stroke-width="1" />
+  </g>
+  <path
+    d="M0 310 C90 250 150 360 240 300 S360 250 400 300 V400 H0 Z"
+    fill="url(#shine)"
+  />
+  <text
+    x="200"
+    y="238"
+    text-anchor="middle"
+    font-family="'Space Grotesk', Arial, sans-serif"
+    font-size="128"
+    font-weight="700"
+    letter-spacing="-8"
+    fill="#ffffff"
+    fill-opacity="0.94"
+  >YN</text>
+</svg>
