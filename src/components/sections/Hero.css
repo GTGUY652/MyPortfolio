@@ -14,26 +14,11 @@
 }
 
 .hero__avatar {
-  position: relative;
-  isolation: isolate;
   width: 176px;
   height: 176px;
   padding: 4px;
   border-radius: var(--radius-full);
   background: var(--gradient-accent);
-}
-
-.hero__avatar::before {
-  content: '';
-  position: absolute;
-  inset: -72px;
-  z-index: -1;
-  background: radial-gradient(
-    circle,
-    rgba(192, 132, 252, 0.18),
-    transparent 68%
-  );
-  pointer-events: none;
 }
 
 .hero__avatar img {
