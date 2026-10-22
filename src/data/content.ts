@@ -38,7 +38,8 @@ import type {
 
 const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
-  // Projects, Experience, and Contact links are added when those sections land.
+  { label: 'Projects', href: '#projects' },
+  // Experience and Contact links are added when those sections land.
 ]
 
 const hero: HeroContent = {
