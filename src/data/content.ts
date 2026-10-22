@@ -1,8 +1,11 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
+import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
+import taboImageUrl from '../assets/images/TaboImage-card.png'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
 import dockerUrl from '../assets/logos/tech/docker.svg'
+import expressjsUrl from '../assets/logos/tech/expressjs.svg'
 import firebaseUrl from '../assets/logos/tech/firebase.svg'
 import hostingerUrl from '../assets/logos/tech/hostinger.svg'
 import html5Url from '../assets/logos/tech/html5.svg'
@@ -10,8 +13,11 @@ import javaUrl from '../assets/logos/tech/java.svg'
 import javascriptUrl from '../assets/logos/tech/javascript.svg'
 import kotlinUrl from '../assets/logos/tech/kotlin.svg'
 import mongodbUrl from '../assets/logos/tech/mongodb.svg'
+import nestjsUrl from '../assets/logos/tech/nestjs.svg'
+import nextjsUrl from '../assets/logos/tech/nextjs.svg'
 import phpUrl from '../assets/logos/tech/php.svg'
 import postgresqlUrl from '../assets/logos/tech/postgresql.svg'
+import postmanUrl from '../assets/logos/tech/postman.svg'
 import pythonUrl from '../assets/logos/tech/python.svg'
 import reactUrl from '../assets/logos/tech/react.svg'
 import reactnativeUrl from '../assets/logos/tech/reactnative.svg'
@@ -21,15 +27,23 @@ import supabaseUrl from '../assets/logos/tech/supabase.svg'
 import tailwindcssUrl from '../assets/logos/tech/tailwindcss.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
 import xamppUrl from '../assets/logos/tech/xampp.svg'
-import type { HeroContent, NavItem, SiteContent, TechItem } from './types'
+import type {
+  HeroContent,
+  NavItem,
+  ProjectItem,
+  ProjectsHeading,
+  SiteContent,
+  TechItem,
+} from './types'
 
-// PLACEHOLDER CONTENT — replace every value in this file with real details.
+// Placeholder content remains in this file — replace placeholder values with real details.
 // Brick 1 exports the content object with navigation, hero, and tech data.
-// Later bricks fill in projects, experience, and socials.
+// Later bricks fill in experience and socials.
 
 const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
-  // Projects, Experience, and Contact links are added when those sections land.
+  { label: 'Projects', href: '#projects' },
+  // Experience and Contact links are added when those sections land.
 ]
 
 const hero: HeroContent = {
@@ -59,8 +73,11 @@ const tech: TechItem[] = [
   { name: 'CSS', src: cssUrl },
   { name: 'React', src: reactUrl },
   { name: 'React Native', src: reactnativeUrl },
+  { name: 'Next.js', src: nextjsUrl },
   { name: 'TypeScript', src: typescriptUrl },
   { name: 'Tailwind CSS', src: tailwindcssUrl },
+  { name: 'NestJS', src: nestjsUrl },
+  { name: 'ExpressJS', src: expressjsUrl },
   { name: 'Java', src: javaUrl },
   { name: 'Kotlin', src: kotlinUrl },
   { name: 'Python', src: pythonUrl },
@@ -76,13 +93,50 @@ const tech: TechItem[] = [
   { name: 'Firebase', src: firebaseUrl },
   { name: 'SQLite', src: sqliteUrl },
   { name: 'MongoDB', src: mongodbUrl },
+  { name: 'Postman', src: postmanUrl },
+]
+
+// Project previews use screenshots of the live sites.
+const projectsHeading: ProjectsHeading = {
+  index: '01',
+  label: 'Selected work',
+  title: 'Projects',
+  intro:
+    'A selection of interfaces and systems that I’ve built and helped build from concept through launch.',
+}
+
+const projects: ProjectItem[] = [
+  {
+    title: 'Tabo',
+    category: 'Agricultural Platform',
+    year: '2026',
+    description:
+      'An agriculture social media platform that lets users Grow Together, Trade Together, and Work Together.',
+    tags: [],
+    image: taboImageUrl,
+    imageAlt: 'Sign-in screen for the Tabo agricultural platform',
+    href: 'https://tabo.com.ph/',
+  },
+  {
+    title: 'DinkResponsibly',
+    category: 'Booking System',
+    year: '2026',
+    description:
+      'A booking system with AI integration for the admin side that helps with operations and can help with business-side problems, questions, and suggestions.',
+    tags: [],
+    image: dinkResponsiblyUrl,
+    imageAlt:
+      'DinkResponsibly homepage with pickleball court booking and availability',
+    href: 'https://dink-responsibly.vercel.app/',
+  },
 ]
 
 export const content: SiteContent = {
   ...hero,
   nav,
   tech,
-  projects: [],
+  projectsHeading,
+  projects,
   experience: [],
   socials: [],
 }

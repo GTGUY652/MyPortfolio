@@ -14,26 +14,11 @@
 }
 
 .hero__avatar {
-  position: relative;
-  isolation: isolate;
   width: 176px;
   height: 176px;
   padding: 4px;
   border-radius: var(--radius-full);
   background: var(--gradient-accent);
-}
-
-.hero__avatar::before {
-  content: '';
-  position: absolute;
-  inset: -72px;
-  z-index: -1;
-  background: radial-gradient(
-    circle,
-    rgba(192, 132, 252, 0.18),
-    transparent 68%
-  );
-  pointer-events: none;
 }
 
 .hero__avatar img {
@@ -44,13 +29,17 @@
 }
 
 .hero__title {
+  width: 100%;
+  max-width: var(--container-narrow);
   margin-top: var(--space-7);
+  margin-inline: auto;
   color: var(--color-text);
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
+  text-align: center;
 }
 
 .hero__accent {

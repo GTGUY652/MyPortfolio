@@ -33,6 +33,7 @@
 
   /* Layout */
   --container: 1120px;
+  --container-narrow: 880px;
   --gutter: clamp(20px, 5vw, 32px);
   --section-padding: clamp(64px, 9vw, 112px);
   --nav-height: 72px;

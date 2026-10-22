@@ -1,5 +1,6 @@
 import { Navbar } from './components/layout/Navbar'
 import { Hero } from './components/sections/Hero'
+import { Projects } from './components/sections/Projects'
 import { content } from './data/content'
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
 
       <main id="main" tabIndex={-1}>
         <Hero hero={content} tech={content.tech} />
+        <Projects
+          heading={content.projectsHeading}
+          projects={content.projects}
+        />
       </main>
     </>
   )

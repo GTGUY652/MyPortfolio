@@ -69,6 +69,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .tech-strip__list {
+    max-width: 860px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tech-strip__item:hover img {
     transform: none;
