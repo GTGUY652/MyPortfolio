@@ -292,6 +292,7 @@ All UI icons live in `src/components/icons/index.tsx` as inline SVG components u
 - Bottom border is transparent at the top of the page and becomes `--color-border` once `window.scrollY > 8`.
 - Logo is the monogram plus an accent dot, linking to `#home`.
 - Desktop links are 14px, muted by default, full text colour on hover, with a 2px gradient underline for the active section.
+- Only sections that exist are listed. The first brick ships Home; each later brick appends its link so no nav item ever points at a missing section.
 - Active section determined by an IntersectionObserver over the four section ids, using a centre band (`rootMargin: -40% 0px -50% 0px`).
 - Mobile menu is a panel below the header: surface background, border, 44px-tall links, closes after selection, on Escape, and when the viewport reaches 900px.
 - Toggle button has an accessible name that changes between "Open menu" and "Close menu".
@@ -302,7 +303,7 @@ All UI icons live in `src/components/icons/index.tsx` as inline SVG components u
 - Avatar: 176px desktop, 136px below 640px, circular, with a 4px gradient ring. Uses `object-fit: cover`.
 - h1 renders `lineOne`, a `<br>`, `lineTwo`, then the accent phrase in a gradient-filled span.
 - Summary is capped at 62ch and uses muted text.
-- CTA row wraps on small screens; primary is a filled light button, secondary is an outlined button with an arrow icon.
+- CTA row wraps on small screens; primary is a filled light button, secondary is an outlined button with a download icon.
 - Tech strip sits below the CTAs with a 12px uppercase label and six 28px logos; brand colours are preserved.
 - A subtle radial accent glow may sit behind the avatar at ≤12% opacity.
 
@@ -455,3 +456,14 @@ Verification for every change:
 - Open Graph image and deployment.
 - Automated tests once interactivity grows.
 - Optional blog or writing section.
+
+## 17. Implementation order
+
+The shell is delivered in four independently reviewable bricks:
+
+1. **Foundation, navigation, and hero** — design tokens, global styles, content contract, placeholder assets, navbar, hero. This is the first implementation plan.
+2. **Projects** — project data, thumbnails, card grid, reveal motion.
+3. **Experience** — experience data, company marks, timeline rows.
+4. **Contact and footer** — contact copy, social links, footer, metadata polish.
+
+Each brick ends with a working, lint-clean page. Nav links are appended as their sections land.
