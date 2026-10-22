@@ -8,15 +8,19 @@ import hostingerUrl from '../assets/logos/tech/hostinger.svg'
 import html5Url from '../assets/logos/tech/html5.svg'
 import javaUrl from '../assets/logos/tech/java.svg'
 import javascriptUrl from '../assets/logos/tech/javascript.svg'
+import kotlinUrl from '../assets/logos/tech/kotlin.svg'
 import mongodbUrl from '../assets/logos/tech/mongodb.svg'
+import phpUrl from '../assets/logos/tech/php.svg'
 import postgresqlUrl from '../assets/logos/tech/postgresql.svg'
 import pythonUrl from '../assets/logos/tech/python.svg'
 import reactUrl from '../assets/logos/tech/react.svg'
+import reactnativeUrl from '../assets/logos/tech/reactnative.svg'
 import redisUrl from '../assets/logos/tech/redis.svg'
 import sqliteUrl from '../assets/logos/tech/sqlite.svg'
 import supabaseUrl from '../assets/logos/tech/supabase.svg'
 import tailwindcssUrl from '../assets/logos/tech/tailwindcss.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
+import xamppUrl from '../assets/logos/tech/xampp.svg'
 import type { HeroContent, NavItem, SiteContent, TechItem } from './types'
 
 // PLACEHOLDER CONTENT — replace every value in this file with real details.
@@ -54,16 +58,20 @@ const tech: TechItem[] = [
   { name: 'HTML', src: html5Url },
   { name: 'CSS', src: cssUrl },
   { name: 'React', src: reactUrl },
+  { name: 'React Native', src: reactnativeUrl },
   { name: 'TypeScript', src: typescriptUrl },
   { name: 'Tailwind CSS', src: tailwindcssUrl },
   { name: 'Java', src: javaUrl },
+  { name: 'Kotlin', src: kotlinUrl },
   { name: 'Python', src: pythonUrl },
+  { name: 'PHP', src: phpUrl },
   { name: 'C', src: cUrl },
   { name: 'Docker', src: dockerUrl },
   { name: 'PostgreSQL', src: postgresqlUrl },
   { name: 'AWS', src: amazonawsUrl },
   { name: 'Redis', src: redisUrl },
   { name: 'Hostinger', src: hostingerUrl },
+  { name: 'XAMPP', src: xamppUrl },
   { name: 'Supabase', src: supabaseUrl },
   { name: 'Firebase', src: firebaseUrl },
   { name: 'SQLite', src: sqliteUrl },

@@ -19,11 +19,13 @@
 }
 
 .tech-strip__list {
-  display: grid;
-  grid-template-columns: repeat(6, 44px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: var(--space-2);
+  width: 100%;
+  max-width: 304px;
 }
 
 .tech-strip__item {
@@ -47,29 +49,23 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 343px) {
-  .tech-strip__list {
-    grid-template-columns: repeat(5, 44px);
-  }
-}
-
 @media (min-width: 640px) {
   .tech-strip__list {
-    grid-template-columns: repeat(9, 44px);
+    max-width: 464px;
     gap: var(--space-4);
   }
 }
 
 @media (min-width: 768px) {
   .tech-strip__list {
-    gap: var(--space-5);
+    max-width: 644px;
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 820px) {
   .tech-strip__list {
-    grid-template-columns: repeat(18, 44px);
-    gap: var(--space-4);
+    max-width: 724px;
+    gap: var(--space-5);
   }
 }
 
