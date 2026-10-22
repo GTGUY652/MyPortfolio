@@ -109,7 +109,7 @@ const projects: ProjectItem[] = [
   {
     title: 'Tabo',
     category: 'Agricultural Platform',
-    year: '2025',
+    year: '2026',
     description:
       'An agriculture social media platform that lets users Grow Together, Trade Together, and Work Together.',
     tags: [],
@@ -120,7 +120,7 @@ const projects: ProjectItem[] = [
   {
     title: 'DinkResponsibly',
     category: 'Booking System',
-    year: '2024',
+    year: '2026',
     description:
       'A booking system with AI integration for the admin side that helps with operations and can help with business-side problems, questions, and suggestions.',
     tags: [],
