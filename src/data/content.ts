@@ -179,7 +179,7 @@ const experience: ExperienceItem[] = [
   {
     role: 'Start-up Co-Founder of TABO',
     company: 'UmaSenso',
-    start: '2026',
+    start: 'June 2025',
     end: 'Present',
     description:
       'Helped building the idea into production. As a co-founder of this platform i dedicated myself to learning a lot of new things that is out of my own capabilities, learning the fundamentals of System Architecture and Design in order to maintain the platform for production, maintain dozens of users, and handle traffic during production.',
