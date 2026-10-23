@@ -31,6 +31,8 @@ import tailwindcssUrl from '../assets/logos/tech/tailwindcss.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
 import xamppUrl from '../assets/logos/tech/xampp.svg'
 import type {
+  ContactDetails,
+  ContactHeading,
   ExperienceHeading,
   ExperienceItem,
   HeroContent,
@@ -38,6 +40,7 @@ import type {
   ProjectItem,
   ProjectsHeading,
   SiteContent,
+  SocialLink,
   TechItem,
 } from './types'
 
@@ -47,8 +50,15 @@ const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  // Contact is added when that section lands.
+  { label: 'Contact', href: '#contact' },
 ]
+
+// CONTACT PLACEHOLDERS — replace these values with real details.
+const contact: ContactDetails = {
+  workEmail: 'work@example.com',
+  personalEmail: 'hello@example.com',
+  phone: '+63 912 345 6789',
+}
 
 const hero: HeroContent = {
   name: 'Rikcy Tano',
@@ -60,7 +70,7 @@ const hero: HeroContent = {
   },
   summary:
     'I am a Software Developer aspiring to fix any IT solutions that comes to me. When I work, I do it with diligence, willingness, and commitment because having these traits makes me work hard, especially when there are new things that needs to be learned. In a new environment, I tend to get close to the new stuff so that I can learn, adapt, and apply. What I show is not just my work but my willingness to solve, adapt, and learn at each step of the way.',
-  email: 'hello@example.com',
+  email: contact.personalEmail,
   cvUrl: '/cv-placeholder.pdf',
   avatar: avatarUrl,
   avatarAlt: 'Portrait of the portfolio owner',
@@ -174,6 +184,27 @@ const experience: ExperienceItem[] = [
   },
 ]
 
+const contactHeading: ContactHeading = {
+  index: '03',
+  label: 'Get in touch',
+  title: 'Contact',
+  intro:
+    'I’m open to full-time roles, freelance projects, and conversations about building reliable software. Work inquiries are best sent to the address below.',
+}
+
+const socials: SocialLink[] = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/placeholder',
+    icon: 'github',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/placeholder',
+    icon: 'linkedin',
+  },
+]
+
 export const content: SiteContent = {
   ...hero,
   nav,
@@ -182,5 +213,7 @@ export const content: SiteContent = {
   projects,
   experienceHeading,
   experience,
-  socials: [],
+  contactHeading,
+  contact,
+  socials,
 }
