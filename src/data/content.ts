@@ -92,7 +92,7 @@ const hero: HeroContent = {
   summary:
     'I am a Software Developer aspiring to fix any IT solutions that comes to me. When I work, I do it with diligence, willingness, and commitment because having these traits makes me work hard, especially when there are new things that needs to be learned. In a new environment, I tend to get close to the new stuff so that I can learn, adapt, and apply. What I show is not just my work but my willingness to solve, adapt, and learn at each step of the way.',
   email: contact.personalEmail,
-  cvUrl: '/cv-placeholder.pdf',
+  cvUrl: '/rikcy-tano-cv.pdf',
   avatar: avatarUrl,
   avatarAlt: 'Portrait of the portfolio owner',
   labels: {

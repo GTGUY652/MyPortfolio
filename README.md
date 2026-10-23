@@ -40,9 +40,8 @@ Images live in:
 To swap an image, overwrite the file with the same name. Keep the same
 aspect ratio where possible: avatar 1:1, project thumbnails 16:10.
 
-The CV button points at `public/cv-placeholder.pdf`. Replace that file
-with your real CV, keeping the filename, or update `cvUrl` in
-`src/data/content.ts`.
+The CV button points at `public/rikcy-tano-cv.pdf`. To replace it,
+overwrite that file or update `cvUrl` in `src/data/content.ts`.
 
 ## Structure
 
