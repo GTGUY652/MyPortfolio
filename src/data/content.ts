@@ -3,7 +3,7 @@ import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
 import acmeLogoUrl from '../assets/logos/companies/acme.svg'
 import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
-import northwindLogoUrl from '../assets/logos/companies/northwind.svg'
+import taboIconUrl from '../assets/logos/companies/TaboIcon.svg'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
@@ -143,16 +143,16 @@ const experienceHeading: ExperienceHeading = {
     'A look at the teams and products I’ve contributed to, and the problems I’ve helped solve.',
 }
 
-// PLACEHOLDER CONTENT — replace these entries with real experience.
+// First entry is real; the remaining entries are placeholders.
 const experience: ExperienceItem[] = [
   {
-    role: 'Senior Frontend Developer',
-    company: 'Northwind Studio',
-    start: '2023',
+    role: 'Start-up Co-Founder of TABO',
+    company: 'UmaSenso',
+    start: '2026',
     end: 'Present',
     description:
-      'Led front-end delivery for a multi-tenant analytics product, partnering with design and backend teams to ship clearer, faster workflows.',
-    logo: northwindLogoUrl,
+      'Helped building the idea into production. As a co-founder of this platform i dedicated myself to learning a lot of new things that is out of my own capabilities, learning the fundamentals of System Architecture and Design in order to maintain the platform for production, maintain dozens of users, and handle traffic during production.',
+    logo: taboIconUrl,
   },
   {
     role: 'Full-Stack Developer',

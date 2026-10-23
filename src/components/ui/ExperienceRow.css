@@ -56,6 +56,7 @@
 .experience-row__mark img {
   width: 24px;
   height: 24px;
+  object-fit: contain;
 }
 
 .experience-row__identity {
