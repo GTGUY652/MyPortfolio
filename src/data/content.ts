@@ -1,7 +1,6 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
-import acmeLogoUrl from '../assets/logos/companies/acme.svg'
 import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
 import taboIconUrl from '../assets/logos/companies/TaboIcon.svg'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
@@ -143,7 +142,7 @@ const experienceHeading: ExperienceHeading = {
     'A look at the teams and products I’ve contributed to, and the problems I’ve helped solve.',
 }
 
-// First entry is real; the remaining entries are placeholders.
+// First two entries are real; the final entry remains a placeholder.
 const experience: ExperienceItem[] = [
   {
     role: 'Start-up Co-Founder of TABO',
@@ -156,12 +155,12 @@ const experience: ExperienceItem[] = [
   },
   {
     role: 'Full-Stack Developer',
-    company: 'Acme Labs',
-    start: '2021',
-    end: '2023',
+    company: 'Freelance',
+    start: '2026',
+    end: 'Present',
     description:
-      'Built and maintained full-stack features across customer-facing and internal tools, with a focus on reliable data flows and reusable UI patterns.',
-    logo: acmeLogoUrl,
+      'Designed, built, and maintained custom web systems for business owners, delivering practical IT solutions that helped streamline operations, attract new customers, and drive growth.',
+    logo: freelanceLogoUrl,
   },
   {
     role: 'Web Developer',
