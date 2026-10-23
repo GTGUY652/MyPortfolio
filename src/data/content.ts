@@ -1,6 +1,9 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
+import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
+import qualfonLogoUrl from '../assets/logos/companies/Qualfon.svg'
+import taboIconUrl from '../assets/logos/companies/TaboIcon.svg'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
 import cssUrl from '../assets/logos/tech/css.svg'
@@ -28,6 +31,8 @@ import tailwindcssUrl from '../assets/logos/tech/tailwindcss.svg'
 import typescriptUrl from '../assets/logos/tech/typescript.svg'
 import xamppUrl from '../assets/logos/tech/xampp.svg'
 import type {
+  ExperienceHeading,
+  ExperienceItem,
   HeroContent,
   NavItem,
   ProjectItem,
@@ -37,13 +42,12 @@ import type {
 } from './types'
 
 // Placeholder content remains in this file — replace placeholder values with real details.
-// Brick 1 exports the content object with navigation, hero, and tech data.
-// Later bricks fill in experience and socials.
 
 const nav: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'Projects', href: '#projects' },
-  // Experience and Contact links are added when those sections land.
+  { label: 'Experience', href: '#experience' },
+  // Contact is added when that section lands.
 ]
 
 const hero: HeroContent = {
@@ -131,12 +135,52 @@ const projects: ProjectItem[] = [
   },
 ]
 
+const experienceHeading: ExperienceHeading = {
+  index: '02',
+  label: 'Career',
+  title: 'Experience',
+  intro:
+    'A look at the teams and products I’ve contributed to, and the problems I’ve helped solve.',
+}
+
+// Experience entries are current; update them as roles change.
+const experience: ExperienceItem[] = [
+  {
+    role: 'Start-up Co-Founder of TABO',
+    company: 'UmaSenso',
+    start: '2026',
+    end: 'Present',
+    description:
+      'Helped building the idea into production. As a co-founder of this platform i dedicated myself to learning a lot of new things that is out of my own capabilities, learning the fundamentals of System Architecture and Design in order to maintain the platform for production, maintain dozens of users, and handle traffic during production.',
+    logo: taboIconUrl,
+  },
+  {
+    role: 'Full-Stack Developer',
+    company: 'Freelance',
+    start: '2026',
+    end: 'Present',
+    description:
+      'Designed, built, and maintained custom web systems for business owners, delivering practical IT solutions that helped streamline operations, attract new customers, and drive growth.',
+    logo: freelanceLogoUrl,
+  },
+  {
+    role: 'Immersion at Qualfon Cebu',
+    company: 'Immersion',
+    start: 'April 2024',
+    end: 'May 2024',
+    description:
+      'My time during the immersion I was just handling repetitive task at the company by managing the archive.',
+    logo: qualfonLogoUrl,
+  },
+]
+
 export const content: SiteContent = {
   ...hero,
   nav,
   tech,
   projectsHeading,
   projects,
-  experience: [],
+  experienceHeading,
+  experience,
   socials: [],
 }
