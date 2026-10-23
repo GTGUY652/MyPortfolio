@@ -53,11 +53,11 @@ const nav: NavItem[] = [
   { label: 'Contact', href: '#contact' },
 ]
 
-// CONTACT PLACEHOLDERS — replace these values with real details.
+// CONTACT DETAILS — edit these values here.
 const contact: ContactDetails = {
-  workEmail: 'work@example.com',
-  personalEmail: 'hello@example.com',
-  phone: '+63 912 345 6789',
+  workEmail: 'tanorikcy2005@gmail.com',
+  personalEmail: 'rikcytano@gmail.com',
+  phone: '09278609853',
 }
 
 const contactHeading: ContactHeading = {
@@ -71,12 +71,12 @@ const contactHeading: ContactHeading = {
 const socials: SocialLink[] = [
   {
     label: 'GitHub',
-    href: 'https://github.com/placeholder',
+    href: 'https://github.com/GTGUY652',
     icon: 'github',
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/placeholder',
+    href: 'https://www.linkedin.com/in/devenz',
     icon: 'linkedin',
   },
 ]
