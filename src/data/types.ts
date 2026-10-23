@@ -43,6 +43,19 @@ export interface ExperienceHeading {
   intro: string
 }
 
+export interface ContactHeading {
+  index: string
+  label: string
+  title: string
+  intro: string
+}
+
+export interface ContactDetails {
+  workEmail: string
+  personalEmail: string
+  phone: string
+}
+
 export interface HeroLabels {
   getInTouch: string
   downloadCv: string
@@ -79,5 +92,7 @@ export interface SiteContent extends HeroContent {
   projectsHeading: ProjectsHeading
   experience: ExperienceItem[]
   experienceHeading: ExperienceHeading
+  contactHeading: ContactHeading
+  contact: ContactDetails
   socials: SocialLink[]
 }
