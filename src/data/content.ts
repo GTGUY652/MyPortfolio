@@ -60,6 +60,27 @@ const contact: ContactDetails = {
   phone: '+63 912 345 6789',
 }
 
+const contactHeading: ContactHeading = {
+  index: '03',
+  label: 'Get in touch',
+  title: 'Contact',
+  intro:
+    'I’m open to full-time roles, freelance projects, and conversations about building reliable software. Work inquiries are best sent to the address below.',
+}
+
+const socials: SocialLink[] = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/placeholder',
+    icon: 'github',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/placeholder',
+    icon: 'linkedin',
+  },
+]
+
 const hero: HeroContent = {
   name: 'Rikcy Tano',
   monogram: 'RT',
@@ -181,27 +202,6 @@ const experience: ExperienceItem[] = [
     description:
       'My time during the immersion I was just handling repetitive task at the company by managing the archive.',
     logo: qualfonLogoUrl,
-  },
-]
-
-const contactHeading: ContactHeading = {
-  index: '03',
-  label: 'Get in touch',
-  title: 'Contact',
-  intro:
-    'I’m open to full-time roles, freelance projects, and conversations about building reliable software. Work inquiries are best sent to the address below.',
-}
-
-const socials: SocialLink[] = [
-  {
-    label: 'GitHub',
-    href: 'https://github.com/placeholder',
-    icon: 'github',
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/placeholder',
-    icon: 'linkedin',
   },
 ]
 
