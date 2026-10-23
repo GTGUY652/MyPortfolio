@@ -21,7 +21,15 @@ function phoneHref(phone: string) {
   return `tel:${phone.replace(/[^\d+]/g, '')}`
 }
 
+function splitEmail(email: string) {
+  const at = email.lastIndexOf('@')
+  if (at === -1) return [email, ''] as const
+  return [email.slice(0, at + 1), email.slice(at + 1)] as const
+}
+
 export function Contact({ heading, contact, socials }: ContactProps) {
+  const [workEmailName, workEmailDomain] = splitEmail(contact.workEmail)
+
   return (
     <section id="contact" className="contact" aria-labelledby="contact-title">
       <div className="container">
@@ -39,7 +47,9 @@ export function Contact({ heading, contact, socials }: ContactProps) {
             <span className="contact__email-label">Work email</span>
             <span className="contact__email-row">
               <span className="contact__email-address">
-                {contact.workEmail}
+                {workEmailName}
+                <wbr />
+                {workEmailDomain}
               </span>
               <ArrowUpRight
                 className="contact__arrow"
