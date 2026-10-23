@@ -92,7 +92,7 @@ const hero: HeroContent = {
   summary:
     'I am a Software Developer aspiring to fix any IT solutions that comes to me. When I work, I do it with diligence, willingness, and commitment because having these traits makes me work hard, especially when there are new things that needs to be learned. In a new environment, I tend to get close to the new stuff so that I can learn, adapt, and apply. What I show is not just my work but my willingness to solve, adapt, and learn at each step of the way.',
   email: contact.personalEmail,
-  cvUrl: '/cv-placeholder.pdf',
+  cvUrl: '/rikcy-tano-cv.pdf',
   avatar: avatarUrl,
   avatarAlt: 'Portrait of the portfolio owner',
   labels: {
@@ -179,7 +179,7 @@ const experience: ExperienceItem[] = [
   {
     role: 'Start-up Co-Founder of TABO',
     company: 'UmaSenso',
-    start: '2026',
+    start: 'June 2025',
     end: 'Present',
     description:
       'Helped building the idea into production. As a co-founder of this platform i dedicated myself to learning a lot of new things that is out of my own capabilities, learning the fundamentals of System Architecture and Design in order to maintain the platform for production, maintain dozens of users, and handle traffic during production.',
@@ -188,7 +188,7 @@ const experience: ExperienceItem[] = [
   {
     role: 'Full-Stack Developer',
     company: 'Freelance',
-    start: '2026',
+    start: 'August 2026',
     end: 'Present',
     description:
       'Designed, built, and maintained custom web systems for business owners, delivering practical IT solutions that helped streamline operations, attract new customers, and drive growth.',
