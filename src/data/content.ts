@@ -188,7 +188,7 @@ const experience: ExperienceItem[] = [
   {
     role: 'Full-Stack Developer',
     company: 'Freelance',
-    start: '2026',
+    start: 'August 2026',
     end: 'Present',
     description:
       'Designed, built, and maintained custom web systems for business owners, delivering practical IT solutions that helped streamline operations, attract new customers, and drive growth.',
