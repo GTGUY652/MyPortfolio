@@ -1,4 +1,5 @@
 import { Navbar } from './components/layout/Navbar'
+import { Contact } from './components/sections/Contact'
 import { Experience } from './components/sections/Experience'
 import { Hero } from './components/sections/Hero'
 import { Projects } from './components/sections/Projects'
@@ -26,6 +27,11 @@ function App() {
         <Experience
           heading={content.experienceHeading}
           experience={content.experience}
+        />
+        <Contact
+          heading={content.contactHeading}
+          contact={content.contact}
+          socials={content.socials}
         />
       </main>
     </>
