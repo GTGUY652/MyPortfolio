@@ -2,6 +2,7 @@ import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
 import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
+import qualfonLogoUrl from '../assets/logos/companies/Qualfon.svg'
 import taboIconUrl from '../assets/logos/companies/TaboIcon.svg'
 import amazonawsUrl from '../assets/logos/tech/amazonaws.svg'
 import cUrl from '../assets/logos/tech/c.svg'
@@ -142,7 +143,7 @@ const experienceHeading: ExperienceHeading = {
     'A look at the teams and products I’ve contributed to, and the problems I’ve helped solve.',
 }
 
-// First two entries are real; the final entry remains a placeholder.
+// Experience entries are current; update them as roles change.
 const experience: ExperienceItem[] = [
   {
     role: 'Start-up Co-Founder of TABO',
@@ -163,13 +164,13 @@ const experience: ExperienceItem[] = [
     logo: freelanceLogoUrl,
   },
   {
-    role: 'Web Developer',
-    company: 'Freelance',
-    start: '2020',
-    end: '2021',
+    role: 'Immersion at Qualfon Cebu',
+    company: 'Immersion',
+    start: 'April 2024',
+    end: 'May 2024',
     description:
-      'Designed and shipped responsive sites for small businesses, handling everything from discovery and UI to deployment and handoff.',
-    logo: freelanceLogoUrl,
+      'My time during the immersion I was just handling repetitive task at the company by managing the archive.',
+    logo: qualfonLogoUrl,
   },
 ]
 
