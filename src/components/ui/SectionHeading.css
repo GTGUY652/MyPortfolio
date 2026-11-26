@@ -9,16 +9,12 @@
 }
 
 .section-heading__eyebrow {
-  background: var(--gradient-accent);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--color-accent);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   line-height: 1.4;
   text-transform: uppercase;
-  -webkit-text-fill-color: transparent;
 }
 
 .section-heading__title {
@@ -48,13 +44,5 @@
   .section-heading__aside {
     justify-self: end;
     width: 100%;
-  }
-}
-
-@media (forced-colors: active) {
-  .section-heading__eyebrow {
-    background: none;
-    color: currentColor;
-    -webkit-text-fill-color: currentColor;
   }
 }

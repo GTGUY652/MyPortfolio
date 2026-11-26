@@ -65,6 +65,7 @@ export interface HeroLabels {
 export interface HeroContent {
   name: string
   monogram: string
+  eyebrow: string
   headline: {
     lineOne: string
     lineTwo: string
@@ -73,8 +74,12 @@ export interface HeroContent {
   summary: string
   email: string
   cvUrl: string
+  showActions: boolean
   avatar: string
   avatarAlt: string
+  showcaseImage: string
+  showcaseAlt: string
+  showcaseCaption: string
   labels: HeroLabels
 }
 

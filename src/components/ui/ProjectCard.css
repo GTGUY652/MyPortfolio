@@ -44,7 +44,7 @@
 }
 
 .project-card__category {
-  color: var(--color-accent-from);
+  color: var(--color-accent);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -106,14 +106,14 @@
 }
 
 .project-card:focus-visible {
-  border-color: var(--color-accent-from);
+  border-color: var(--color-accent);
   border-radius: var(--radius-lg);
   outline-offset: 4px;
   transform: translateY(-2px);
 }
 
 .project-card:focus-visible .project-card__arrow {
-  color: var(--color-accent-from);
+  color: var(--color-accent);
   transform: translate(2px, -2px);
 }
 
@@ -123,12 +123,12 @@
 
 @media (hover: hover) {
   .project-card:hover {
-    border-color: var(--color-accent-from);
+    border-color: var(--color-accent);
     transform: translateY(-2px);
   }
 
   .project-card:hover .project-card__arrow {
-    color: var(--color-accent-from);
+    color: var(--color-accent);
     transform: translate(2px, -2px);
   }
 

@@ -39,7 +39,7 @@
 }
 
 .navbar__logo-dot {
-  color: var(--color-accent-from);
+  color: var(--color-accent);
 }
 
 .navbar__desktop {
@@ -78,7 +78,7 @@
   bottom: 4px;
   left: 0;
   height: 2px;
-  background: var(--gradient-accent);
+  background: var(--color-accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--duration-base) var(--ease-out);

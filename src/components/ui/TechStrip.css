@@ -15,7 +15,7 @@
 }
 
 .tech-strip__label--active {
-  color: var(--color-accent-from);
+  color: var(--color-accent);
 }
 
 .tech-strip__list {

@@ -14,12 +14,6 @@ export function Footer({ name }: FooterProps) {
           <p className="footer__copyright">
             © {year} {name}
           </p>
-          <a className="footer__top" href="#home">
-            Back to top
-            <span className="footer__arrow" aria-hidden="true">
-              ↑
-            </span>
-          </a>
         </div>
       </div>
     </footer>
