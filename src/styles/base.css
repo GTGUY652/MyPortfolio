@@ -67,7 +67,7 @@ main:focus {
 }
 
 ::selection {
-  background: var(--color-accent-from);
+  background: var(--color-accent);
   color: var(--color-bg);
 }
 

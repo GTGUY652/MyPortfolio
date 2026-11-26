@@ -41,7 +41,7 @@
 }
 
 .button--secondary:hover {
-  border-color: var(--color-accent-from);
+  border-color: var(--color-accent);
 }
 
 @media (prefers-reduced-motion: reduce) {

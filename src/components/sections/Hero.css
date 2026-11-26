@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
   min-height: calc(100svh - var(--nav-height));
-  padding-block: clamp(64px, 10vh, 112px);
+  padding-block: clamp(56px, 9vh, 96px);
   scroll-margin-top: var(--nav-height);
 }
 
@@ -10,51 +10,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
-.hero__avatar {
-  width: 176px;
-  height: 176px;
-  padding: 4px;
-  border-radius: var(--radius-full);
-  background: var(--gradient-accent);
-}
-
-.hero__avatar img {
+.hero__split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-7);
   width: 100%;
-  height: 100%;
-  border-radius: var(--radius-full);
-  object-fit: cover;
+  max-width: var(--container-narrow);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 0;
+}
+
+.hero__eyebrow {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .hero__title {
-  width: 100%;
-  max-width: var(--container-narrow);
-  margin-top: var(--space-7);
-  margin-inline: auto;
+  margin-top: var(--space-4);
   color: var(--color-text);
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2rem, 5.2vw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.05;
-  text-align: center;
+  line-height: 1.08;
 }
 
 .hero__accent {
-  background: var(--gradient-accent);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-accent);
 }
 
 .hero__summary {
-  max-width: 62ch;
+  max-width: 54ch;
   margin-top: var(--space-5);
   color: var(--color-text-muted);
-  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  font-size: clamp(0.9375rem, 1.25vw, 1.0625rem);
   line-height: 1.7;
   text-wrap: pretty;
 }
@@ -62,27 +64,97 @@
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--space-3);
   margin-top: var(--space-6);
 }
 
+.hero__showcase {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+}
+
+.hero__media {
+  position: relative;
+  padding-top: 24px;
+  padding-left: 20px;
+}
+
+.hero__avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 76px;
+  height: 76px;
+  border: 4px solid var(--color-bg);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.hero__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__photo {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  aspect-ratio: 3 / 2;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__caption {
+  margin-top: var(--space-3);
+  padding-left: 20px;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
 .hero__tech {
-  margin-top: clamp(48px, 8vh, 80px);
+  width: 100%;
+  margin-top: clamp(48px, 7vh, 72px);
+}
+
+@media (min-width: 900px) {
+  .hero__split {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    column-gap: var(--space-6);
+  }
+
+  .hero__title {
+    font-size: clamp(2.125rem, 3.2vw, 2.5rem);
+  }
+
+  .hero__media {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+
+  .hero__avatar {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero__caption {
+    padding-left: 32px;
+  }
 }
 
 @media (max-width: 640px) {
   .hero {
-    padding-block: var(--space-8) var(--space-7);
-  }
-
-  .hero__avatar {
-    width: 136px;
-    height: 136px;
-  }
-
-  .hero__title {
-    margin-top: var(--space-6);
+    padding-block: var(--space-7) var(--space-6);
   }
 }
 
@@ -94,13 +166,5 @@
 
   .hero__actions .button {
     width: 100%;
-  }
-}
-
-@media (forced-colors: active) {
-  .hero__accent {
-    background: none;
-    color: currentColor;
-    -webkit-text-fill-color: currentColor;
   }
 }

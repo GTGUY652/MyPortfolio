@@ -7,14 +7,8 @@
   --color-border-strong: #3f3f46;
   --color-text: #f4f4f5;
   --color-text-muted: #a1a1aa;
-  --color-accent-from: #c084fc;
-  --color-accent-to: #f472b6;
-  --gradient-accent: linear-gradient(
-    135deg,
-    var(--color-accent-from),
-    var(--color-accent-to)
-  );
-  --color-focus: #c084fc;
+  --color-accent: #c084fc;
+  --color-focus: var(--color-accent);
 
   /* Typography */
   --font-display: 'Space Grotesk Variable', system-ui, sans-serif;

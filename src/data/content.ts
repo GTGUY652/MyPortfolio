@@ -1,6 +1,7 @@
 import avatarUrl from '../assets/images/PortfolioProfile-avatar.jpg'
 import dinkResponsiblyUrl from '../assets/images/DinkResponsiblyImage.jpg'
 import taboImageUrl from '../assets/images/TaboImage-card.png'
+import winningImageUrl from '../assets/images/WinningImage.jpg'
 import freelanceLogoUrl from '../assets/logos/companies/freelance.svg'
 import qualfonLogoUrl from '../assets/logos/companies/Qualfon.svg'
 import taboIconUrl from '../assets/logos/companies/TaboIcon.svg'
@@ -84,17 +85,23 @@ const socials: SocialLink[] = [
 const hero: HeroContent = {
   name: 'Rikcy Tano',
   monogram: 'RT',
+  eyebrow: 'Rikcy Tano · Software Developer',
   headline: {
-    lineOne: 'I work with Diligence,',
-    lineTwo: 'Willingness,',
-    accent: 'and Commitment',
+    lineOne: 'Diligence, Willingness,',
+    lineTwo: 'and',
+    accent: 'Commitment',
   },
   summary:
-    'I am a Software Developer aspiring to fix any IT solutions that comes to me. When I work, I do it with diligence, willingness, and commitment because having these traits makes me work hard, especially when there are new things that needs to be learned. In a new environment, I tend to get close to the new stuff so that I can learn, adapt, and apply. What I show is not just my work but my willingness to solve, adapt, and learn at each step of the way.',
+    'I’m a full-stack software developer building reliable web and mobile systems for businesses and startups. I approach every problem with diligence, willingness, and commitment—adapting quickly to new environments, picking up what the work demands, and shipping practical solutions that hold up in production.',
   email: contact.personalEmail,
   cvUrl: '/rikcy-tano-cv.pdf',
+  showActions: false,
   avatar: avatarUrl,
-  avatarAlt: 'Portrait of the portfolio owner',
+  avatarAlt: 'Portrait of Rikcy Tano',
+  showcaseImage: winningImageUrl,
+  showcaseAlt:
+    'Rikcy Tano and the UmaSenso team on stage after winning First Place with Tabo at Cebu SolutionsFest 2026',
+  showcaseCaption: '1st Place · Cebu SolutionsFest 2026 — Tabo',
   labels: {
     getInTouch: 'Get in Touch',
     downloadCv: 'Download CV',

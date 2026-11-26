@@ -38,7 +38,7 @@
 }
 
 .footer__arrow {
-  color: var(--color-accent-to);
+  color: var(--color-accent);
   transition: transform var(--duration-base) var(--ease-out);
 }
 
@@ -54,7 +54,7 @@
   bottom: 0;
   left: 0;
   height: 2px;
-  background: var(--gradient-accent);
+  background: var(--color-accent);
 }
 
 @media (max-width: 639px) {
