@@ -85,7 +85,7 @@ const socials: SocialLink[] = [
 const hero: HeroContent = {
   name: 'Rikcy Tano',
   monogram: 'RT',
-  eyebrow: 'Rikcy Tano · Software Developer',
+  eyebrow: 'Rikcy Tano',
   headline: {
     lineOne: 'Diligence, Willingness,',
     lineTwo: 'and',
