@@ -1,67 +1,50 @@
-# Rikcy Tano — Portfolio
+# Rikcy Tano
 
-A single-page personal portfolio built with React, TypeScript, and Vite.
+**Full-Stack Software Developer** · Cebu City, Philippines  
+*Diligence, Willingness, and Commitment*
 
-## Status
+I’m a full-stack software developer building reliable web and mobile systems for businesses and startups. I approach every problem with diligence, willingness, and commitment—adapting quickly to new environments, picking up what the work demands, and shipping practical solutions that hold up in production.
 
-Brick 1: design foundation, sticky navigation, and hero section.
-Projects, experience, contact, and footer follow in later bricks.
+---
 
-## Commands
+## Selected Projects
 
-```bash
-npm install
-npm run dev
-npm run build
-npm run lint
-npm run preview
-```
+### [Tabo](https://tabo.com.ph/) — Agricultural Platform *(2026)*
+An agriculture social media and trading platform built to help communities **Grow Together, Trade Together, and Work Together**—helping Philippine farmers reach new profits and opportunities.  
+*Awarded 1st Place (Student Track) at Cebu SolutionsFest 2026.*
 
-## Editing content
+### [DinkResponsibly](https://dink-responsibly.vercel.app/) — Booking System *(2026)*
+A pickleball court booking platform featuring AI integration on the admin side to streamline operations and assist with business questions, problems, and suggestions.
 
-In-page copy, navigation, links, UI labels, and asset references live in
-`src/data/content.ts` as the `content` object. Replace the placeholder
-values with your real details.
+---
 
-### Page metadata
+## Experience
 
-Static document metadata lives in `index.html`: `<title>`, description,
-Open Graph tags, and theme colour. Update those separately; social preview
-crawlers read the HTML, not the React app.
+**Start-up Co-Founder of TABO · UmaSenso** *(June 2025 – Present)*  
+Helped take the platform from concept into production, applying system architecture and design fundamentals to maintain live operations, support active users, and handle production traffic.
 
-The `content` object already includes empty `projects`, `experience`, and
-`socials` arrays for later bricks.
+**Full-Stack Developer · Freelance** *(August 2026 – Present)*  
+Designed, built, and maintained custom web systems for business owners, delivering practical IT solutions that streamline operations, attract new customers, and drive growth.
 
-Images live in:
+**IT Immersion · Qualfon Cebu** *(April 2024 – May 2024)*  
+Supported company archive and records management during workplace immersion in Cebu IT Park.
 
-- `src/assets/images/` — avatar and (later) project thumbnails
-- `src/assets/logos/tech/` — technology logos
+---
 
-To swap an image, overwrite the file with the same name. Keep the same
-aspect ratio where possible: avatar 1:1, project thumbnails 16:10.
+## Recognition & Education
 
-The CV button points at `public/rikcy-tano-cv.pdf`. To replace it,
-overwrite that file or update `cvUrl` in `src/data/content.ts`.
+- **1st Place — Cebu SolutionsFest 2026** *(UmaSenso / Tabo · The Foundation Box & CCCI)*
+- **Best in Mobile App Development** *(Southwestern University, 2026)*
+- **Bachelor of Science in Information Technology** — Southwestern University, Cebu City
 
-## Structure
+---
 
-```text
-src/
-├── assets/        image and logo files
-├── components/
-│   ├── icons/     inline SVG icons
-│   ├── layout/    navbar, container
-│   ├── sections/  page sections
-│   └── ui/        buttons, tech strip
-├── data/          content types and placeholder content
-├── hooks/         scroll and active-section hooks
-├── styles/        design tokens and global base styles
-├── App.tsx
-└── main.tsx
-```
+## Contact
 
-## Notes
+Open to full-time roles, freelance projects, and conversations about building reliable software.
 
-- Dark theme only in this milestone.
-- All current content is fictional placeholder data.
-- The navigation lists only Home until the other sections are built.
+- **Work Email:** [tanorikcy2005@gmail.com](mailto:tanorikcy2005@gmail.com)
+- **Personal Email:** [rikcytano@gmail.com](mailto:rikcytano@gmail.com)
+- **Phone:** [+63 927 860 9853](tel:+639278609853) (`09278609853`)
+- **GitHub:** [github.com/GTGUY652](https://github.com/GTGUY652)
+- **LinkedIn:** [linkedin.com/in/devenz](https://www.linkedin.com/in/devenz)
